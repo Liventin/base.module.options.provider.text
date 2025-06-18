@@ -12,14 +12,8 @@ install | update
 
 ```
 "require": {
-    "liventin/base.module.options.provider.text": "dev-main"
+    "liventin/base.module.options.provider.text": "^1.0.0"
 }
-"repositories": [
-    {
-      "type": "vcs",
-      "url": "git@github.com:liventin/base.module.options.provider.text"
-    }
-]
 ```
 redirect (optional)
 ```
