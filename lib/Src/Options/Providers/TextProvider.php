@@ -20,7 +20,7 @@ class TextProvider implements OptionProvider
     {
         $value = Option::get($moduleId, $option['id'], $option['params']['default'] ?? '');
         $html = '<tr>';
-        $html .= '<td class="adm-detail-content-cell-l" width="50%">' . htmlspecialcharsbx($option['name']) . ':</td>';
+        $html .= '<td class="adm-detail-content-cell-l" width="50%">' . $option['name'] . ':</td>';
         $html .= '<td class="adm-detail-content-cell-r" width="50%">';
         $html .= '<input type="text" name="' . htmlspecialcharsbx($option['id']) . '" value="' . htmlspecialcharsbx($value) . '"';
         $html .= ' size="' . (int)($option['params']['size'] ?? $this->size) . '"';
